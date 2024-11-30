@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Map Metodlari</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>JavaScript Map Metodlari</h1>
+    </header>
+    
+    <section class="hero">
+        <p>Map obyekti kalit-qiymat juftliklarini saqlash uchun ishlatiladi. Bu bo'limda siz Map metodlari bilan tanishasiz.</p>
+    </section>
+    
+    <div class="container">
+        <div class="method">
+            <h2><span class="color">set()</span> Metodi</h2>
+            <p><span class="color">set()</span> metodi Map ga yangi kalit-qiymat juftligini qo'shadi:</p>
+
+              <h5> const map = new Map();</h5>
+               <h5>map.set('ism', 'John');</h5>
+               <h5>map.set('kasb', 'Oshpaz');</h5>
+               <h5>console.log(map);</h5>
+        </div>
+    
+        <div class="method">
+            <h2><span class="green">get()</span> Metodi</h2>
+            <p><span class="green">get()</span> metodi kalit bo'yicha qiymatni qaytaradi:</p>
+            
+           <h5>const ism = map.get('ism'); </h5>
+           <h5>console.log(ism); // 'John'</h5>
+        </div>
+    
+        <div class="method">
+            <h2><span class="blue">has()</span> Metodi</h2>
+            <p><span class="blue">has()</span> metodi Map da kalit mavjudligini tekshiradi:</p>
+            <h5>console.log(map.has('kasb')); // true</h5>
+            <h5>console.log(map.has('yosh')); // false</h5>
+        </div>
+    
+        <div class="method">
+            <h2><span class="orange">delete()</span> Metodi</h2>
+            <p><span class="orange">delete()</span> metodi kalit bo'yicha qiymatni o'chiradi:</p>
+
+            <h5>map.delete('kasb');</h5>
+            <h5>console.log(map);</h5>
+        </div>
+    
+        <div class="method">
+            <h2><span class="color">clear()</span> Metodi</h2>
+            <p><span class="color">clear()</span> metodi Map ni tozalaydi:</p>
+            <h5>map.clear();</h5>
+            <h5>console.log(map); // Empty Map</h5>
+        </div>
+    
+        <div class="method">
+            <h2><span class="color">size</span> Xususiyati</h2>
+            <p><span class="color">size</span> Map dagi elementlar sonini qaytaradi:</p>
+            <h5>map.set('ism', 'Ali');</h5>
+            <h5>console.log(map.size); // 1</h5>
+        </div>
+    </div>
+
+</body>
+</html>
